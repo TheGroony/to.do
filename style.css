@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'corbel', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(229, 229, 229);
+}
+
+@media only screen and (max-width: 414px) {
+
+    .input {
+        width: 400px;
+        max-height: 75px;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+    }
+    input {
+       max-width: 200px;
+    }
+
+    .item {
+        max-width: 350px;
+    }
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 414px;
+    }
+    .logo {
+        flex: 0 1 100px;
+        order: -1;
+       
+    }
+    .trashButton {
+        flex: 0 1 40%;
+        order: -1;
+        max-width: 100px;
+    }
+
+    .content {
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .container {
+        margin-left: 1rem;
+    }
+    .content {
+        margin-right: 1rem;
+    }
+
+}
+
+header {
+    min-height: 6rem;
+    background-color: rgb(184, 43, 43);
+    display: flex;
+    flex: 1 0 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    margin: 1rem;
+    font-size: 5vh;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.input {
+    background-color: rgb(167, 39, 39);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+     margin-right: 5.5rem;
+}
+
+.toDoInput {
+    width: 80vh;
+    font-size: 2rem;
+    background-color: rgb(167, 39, 39);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.addToDo {
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    background-color: rgb(167, 39, 39);
+    padding: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s;
+}
+
+.fa-trash {
+    color: white;
+    transition: all 0.2s;
+}
+
+.trashButton {
+    background-color: rgb(184, 43, 43);
+    border: none;
+    outline: none;
+    font-size: 1.75rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.toDoList {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5rem;
+}
+
+.item {
+    display: flex;
+    width: 50rem;
+    flex-flow: row wrap;
+    background-color: white;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1.1rem;
+    margin: 0.5rem;
+    transition: all 0.2s;
+    height: auto;
+}
+
+.fa-trash:hover {
+    color: rgb(167, 39, 39);
+}
+
+.fa-times {
+    transition: all 0.2s;
+}
+
+.fa-times:hover {
+    color: rgb(167, 39, 39);
+}
+
+.fa-circle {
+    transition: all 0.1s;
+}
+
+.fa-circle:hover {
+    color: greenyellow;
+    opacity: 0.5;
+}
+
+.fa-check-circle {
+    transition: all 0.1s;
+}
+
+.fa-check-circle:hover {
+    color: rgb(167, 39, 39);
+    opacity: 0.5;
+
+}
+
+.statusButton {
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.deleteButton {
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.addToDo:hover {
+    color: greenyellow;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: rotate(10deg) translateY(200px);
+    opacity: 0;
+}
+
+li {
+    overflow: hidden;
+    display: inline-block;
+    flex-flow: row wrap;
+    max-width: 90%;
+    
+}
